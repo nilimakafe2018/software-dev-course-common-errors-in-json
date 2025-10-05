@@ -1,48 +1,18 @@
-/*
-===========================================
-🏨 JSON Syntax Debugging: Hotel Booking Data
-===========================================
+// Identified syntax errors
+//1. "checkInDate": "2024-05-15" : Missing comma between two properties. JSON require comma between key-value pairs.
 
-🎯 Objective:
-Students will analyze a JSON file containing multiple syntax errors,
-identify the issues, and correct them.
+//2. name: "Alice Johnson", : Missing double quotes, In JSON, key must ne in double quotes. 
 
-This activity helps practice spotting and fixing common JSON mistakes such as:
-- Missing commas
-- Incorrect use of quotation marks
-- Unmatched brackets/braces
-- Trailing commas
-- Invalid data types
-*/
+//3. "age": undefined, : JSON does not support undefined. JSON support string, number, boolean, null, objects and array.
+// we can use null instead of undefined.
 
+// 4. "email": "bob.smith@example" : Invalid email address. Should be bob.smith@example.com
 
-// ============================================
-// 🧭 Instructions:
-// ============================================
+// 5. "amenities": ["WiFi", "Breakfast", "Parking",] : Extra commas after "Parking". Must be "Parking" without a comma after it.
 
-/*
-📘 Scenario:
-You’re a developer on a team building a travel booking API.
+// I use https://jsonlint.com/ for json validator. 
 
-A teammate submitted a JSON file to represent a hotel booking, 
-but it contains multiple syntax errors that prevent it from being parsed.
-
-🔧 Your Task:
-1️⃣ Review the provided JSON file
-2️⃣ Identify all syntax errors
-3️⃣ Write down what each error is and why it causes a problem
-4️⃣ Correct the JSON structure so that it is valid
-5️⃣ Validate your corrected version using a JSON linter or validator
-
-🧪 Deliverables:
-- A corrected version of the JSON
-- A list of the corrections made and why each was necessary
-*/
-
-
-// ============================================
-// 🔍 Provided JSON File with Errors
-// ============================================
+// Corrected JSON is in "corrected-project-task.json" file and after checking my JSON, I got a message saying "JSON is valid!". 
 
 const invalidBookingJSON = `
 {
@@ -99,3 +69,6 @@ const invalidBookingJSON = `
 4️⃣ What strategies can help you avoid these kinds of errors in the future?
    (e.g., syntax highlighting, linters, writing JSON by example)
 */
+
+
+
